@@ -1,0 +1,28 @@
+#main {
+  background-color: grey;
+  min-height: 100vh;
+}
+
+#title {
+  background-color: red;
+  text-align: center;
+}
+
+#subtitle {
+  background-color: green;
+  text-align: center;
+}
+
+#img-div {
+  background-color: yellow;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  background-color: white;
+}
