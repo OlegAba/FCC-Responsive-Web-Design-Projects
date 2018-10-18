@@ -1,28 +1,93 @@
+/* CSS Variables */
+:root {
+  --grey1: rgb(40, 40, 40);
+  --grey2: rgb(72, 72, 72);
+  --green-accent: rgb(0, 222, 116);
+  --blue-accent: rgb(61, 181, 218);
+  --text-color: rgb(178, 184, 188);
+}
+
+body {
+  background-color: var(--grey1);
+  color: var(--text-color);
+  font-family: "Impact";
+  text-align: center;
+}
+
 #main {
-  background-color: grey;
-  min-height: 100vh;
+  background-color: var(--grey2);
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-bottom: 20px;
 }
 
 #title {
-  background-color: red;
-  text-align: center;
-}
-
-#subtitle {
-  background-color: green;
-  text-align: center;
+  padding-top: 0.5em;
+  font-size: 4em;
+  text-decoration: underline;
+  text-decoration-color: var(--green-accent);
 }
 
 #img-div {
-  background-color: yellow;
+  background-color: black;
+  margin: 10px;
+  padding: 5px;
 }
 
 #image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #img-caption {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  color: white;
+}
+
+#tribute-info {
+  max-width: 40em;
+  display: block;
+  margin: 0 auto;
+}
+
+#bullet-heading {
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  text-decoration: underline;
+  text-decoration-color: var(--green-accent);
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+li::before {
+  content: "•";
+  color: var(--green-accent);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#container {
+  padding-top: 1em;
+  max-width: 50em;
+  display: block;
+  margin: 0 auto;
+}
+
+#quote {
+
+}
+
+#author-quote {
   text-align: center;
-  background-color: white;
+
 }
