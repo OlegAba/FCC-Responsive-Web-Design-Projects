@@ -1,5 +1,6 @@
 /* CSS Variables */
 :root {
+  /* Credit for colors: https://www.behance.net/gallery/8482091/Flat-Bold-UI-Kit*/
   --grey1: rgb(40, 40, 40); /* TODO: Change to light/dark grey */
   --grey2: rgb(72, 72, 72); /* TODO: Change to light/dark grey */
   --green-accent: rgb(0, 222, 116);
@@ -10,8 +11,10 @@
 body {
   background-color: var(--grey1);
   color: var(--text-color);
-  font-family: "Impact";
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.5em;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 #main {
@@ -25,6 +28,7 @@ body {
 #title {
   padding-top: 0.5em;
   font-size: 4em;
+  font-family: "Impact";
   text-decoration: underline;
   text-decoration-color: var(--green-accent);
 }
@@ -61,6 +65,7 @@ body {
   padding-left: 0.5em;
   text-decoration: underline;
   text-decoration-color: var(--green-accent);
+  font-family: "Impact";
 }
 
 ul {
@@ -95,11 +100,12 @@ li::before {
   text-decoration-color: var(--green-accent);
   font-size: 1.5em;
   padding-top: 1em;
+  font-family: "Impact";
 }
 
 .button {
   background-color: var(--blue-accent);
-  color: white;
+  color: black;
   display: inline-block;
   width: 10em;
   margin: 1em;
@@ -110,4 +116,9 @@ li::before {
 
 .button:hover {
   box-shadow: 2px 2px 20px 8px var(--text-color);
+  color: white;
+}
+
+strong {
+  color: white;
 }
