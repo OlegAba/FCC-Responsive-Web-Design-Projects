@@ -1,124 +1,123 @@
 /* CSS Variables */
 :root {
-  /* Credit for colors: https://www.behance.net/gallery/8482091/Flat-Bold-UI-Kit*/
-  --grey1: rgb(40, 40, 40); /* TODO: Change to light/dark grey */
-  --grey2: rgb(72, 72, 72); /* TODO: Change to light/dark grey */
-  --green-accent: rgb(0, 222, 116);
-  --blue-accent: rgb(61, 181, 218);
-  --text-color: rgb(178, 184, 188);
+    /* Credit for colors: https://www.behance.net/gallery/8482091/Flat-Bold-UI-Kit*/
+    --dark-grey-color: rgb(40, 40, 40);
+    --light-grey-color: rgb(72, 72, 72);
+    --green-accent-color: rgb(0, 222, 116);
+    --blue-color: rgb(61, 181, 218);
+    --text-color: rgb(178, 184, 188);
 }
 
 body {
-  background-color: var(--grey1);
-  color: var(--text-color);
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-#main {
-  background-color: var(--grey2);
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding-bottom: 20px;
-}
-
-#title {
-  padding-top: 0.5em;
-  font-size: 4em;
-  font-family: "Impact";
-  text-decoration: underline;
-  text-decoration-color: var(--green-accent);
-}
-
-#img-div {
-  background-color: black;
-  margin: 10px;
-  padding: 5px;
-}
-
-#image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-#img-caption {
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 1em;
-  color: white;
-}
-
-#tribute-info {
-  max-width: 40em;
-  display: block;
-  margin: 0 auto;
-}
-
-#bullet-heading {
-  text-align: left;
-  padding-top: 1em;
-  padding-left: 0.5em;
-  text-decoration: underline;
-  text-decoration-color: var(--green-accent);
-  font-family: "Impact";
-}
-
-ul {
-  padding-right: 1em;
-  list-style: none;
-  text-align: left;
-}
-
-li::before {
-  content: "•";
-  color: var(--green-accent);
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-#container {
-  padding-top: 1em;
-  max-width: 60em;
-  display: block;
-  margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-#quote {
-  text-align: justify;
-}
-
-#links-heading {
-  text-decoration: underline;
-  text-decoration-color: var(--green-accent);
-  font-size: 1.5em;
-  padding-top: 1em;
-  font-family: "Impact";
-}
-
-.button {
-  background-color: var(--blue-accent);
-  color: black;
-  display: inline-block;
-  width: 10em;
-  margin: 1em;
-  padding: 1em;
-  text-decoration: none;
-  border-radius: 25px;
-}
-
-.button:hover {
-  box-shadow: 2px 2px 20px 8px var(--text-color);
-  color: white;
+    margin-bottom: 1em;
+    background-color: var(--dark-grey-color);
 }
 
 strong {
-  color: white;
+    color: white;
+}
+
+#main {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+    border-radius: 5px;
+    background-color: var(--light-grey-color);
+}
+
+.green-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--green-accent-color);
+}
+
+#title {
+    font-family: 'Impact';
+    font-size: 4em;
+    padding-top: .5em;
+    color: white;
+}
+
+#img-div {
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    padding-right: 1em;
+    padding-left: 1em;
+    color: white;
+}
+
+#tribute-info {
+    display: block;
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+#tribute-heading {
+    font-family: 'Impact';
+    padding-top: 1em;
+    padding-left: .5em;
+    text-align: left;
+    color: white;
+}
+
+ul {
+    padding-right: 1em;
+    list-style: none;
+    text-align: left;
+}
+
+li::before {
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    content: '•';
+    color: var(--green-accent-color);
+}
+
+#container {
+    display: block;
+    max-width: 60em;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#quote {
+    text-align: justify;
+}
+
+#links-heading {
+    font-family: 'Impact';
+    font-size: 1.5em;
+    padding-top: 1em;
+    color: white;
+}
+
+#tribute-link {
+    display: inline-block;
+    width: 10em;
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    background-color: var(--blue-color);
+}
+
+#tribute-link:hover {
+    color: white;
+    box-shadow: 2px 2px 20px 8px var(--text-color);
 }
