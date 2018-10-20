@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-  --grey1: rgb(40, 40, 40);
-  --grey2: rgb(72, 72, 72);
+  --grey1: rgb(40, 40, 40); /* TODO: Change to light/dark grey */
+  --grey2: rgb(72, 72, 72); /* TODO: Change to light/dark grey */
   --green-accent: rgb(0, 222, 116);
   --blue-accent: rgb(61, 181, 218);
   --text-color: rgb(178, 184, 188);
@@ -64,6 +64,7 @@ body {
 }
 
 ul {
+  padding-right: 1em;
   list-style: none;
   text-align: left;
 }
@@ -78,16 +79,35 @@ li::before {
 
 #container {
   padding-top: 1em;
-  max-width: 50em;
+  max-width: 60em;
   display: block;
   margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #quote {
-
+  text-align: justify;
 }
 
-#author-quote {
-  text-align: center;
+#links-heading {
+  text-decoration: underline;
+  text-decoration-color: var(--green-accent);
+  font-size: 1.5em;
+  padding-top: 1em;
+}
 
+.button {
+  background-color: var(--blue-accent);
+  color: white;
+  display: inline-block;
+  width: 10em;
+  margin: 1em;
+  padding: 1em;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 20px 8px var(--text-color);
 }
