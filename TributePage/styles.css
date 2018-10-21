@@ -19,7 +19,8 @@ strong {
 
 #main {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 120%;
+    line-height: 1.2;
     display: block;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -125,4 +126,14 @@ li::before {
 #tribute-link:hover {
     color: white;
     box-shadow: 2px 2px 20px 8px var(--text-color);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+
+  #tribute-link {
+    width: 80%;
+  }
 }
