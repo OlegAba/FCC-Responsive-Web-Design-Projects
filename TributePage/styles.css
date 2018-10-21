@@ -19,7 +19,8 @@ strong {
 
 #main {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 120%;
+    line-height: 1.2;
     display: block;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -29,16 +30,16 @@ strong {
     background-color: var(--light-grey-color);
 }
 
-.green-underline {
-    text-decoration: underline;
-    text-decoration-color: var(--green-accent-color);
-}
-
 #title {
     font-family: 'Impact';
     font-size: 4em;
     padding-top: .5em;
-    color: white;
+    color: var(--green-accent-color);
+    text-decoration: underline;
+}
+
+span {
+  color: white;
 }
 
 #img-div {
@@ -72,7 +73,8 @@ strong {
     padding-top: 1em;
     padding-left: .5em;
     text-align: left;
-    color: white;
+    color: var(--green-accent-color);
+    text-decoration: underline;
 }
 
 ul {
@@ -106,7 +108,8 @@ li::before {
     font-family: 'Impact';
     font-size: 1.5em;
     padding-top: 1em;
-    color: white;
+    color: var(--green-accent-color);
+    text-decoration: underline;
 }
 
 #tribute-link {
@@ -123,4 +126,14 @@ li::before {
 #tribute-link:hover {
     color: white;
     box-shadow: 2px 2px 20px 8px var(--text-color);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+
+  #tribute-link {
+    width: 80%;
+  }
 }

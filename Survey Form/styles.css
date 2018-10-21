@@ -1,0 +1,48 @@
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,516395+100 */
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #516395 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#516395 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1e5799 0%,#516395 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#516395',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed;
+  margin: 4em 1em 4em 1em;
+}
+
+#main {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  max-width: 60em;
+  min-height: 40em;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 2.1rem rgba(0, 0, 0, 0.5);
+}
+
+#title {
+  text-align: center;
+  font-size: 3em;
+  padding-top: 0.5em;
+  margin-bottom: 0em;
+}
+
+.line-break {
+  border-top: 1px dashed #8c8b8b;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+#description {
+  text-align: center;
+}
+
+#survey-form {
+  text-align: center;
+  display: flex;
+}
+
+input[type=text] {
+  padding: 5px;
+}
