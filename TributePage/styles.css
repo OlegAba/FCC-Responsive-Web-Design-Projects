@@ -39,6 +39,8 @@ strong {
     font-size: 4em;
     padding-top: .5em;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--green-accent-color);
 }
 
 #img-div {
