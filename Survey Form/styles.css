@@ -2,9 +2,11 @@
 :root {
     --required-color: rgb(214, 59, 48);
     --not-active-grey-color: rgb(224, 224, 224);
+    --active-blue-color: rgb(51, 125, 253);
 }
 
 body {
+  /* TODO: Give credit for below */
   background: #1e5799; /* Old browsers */
   background: -moz-linear-gradient(-45deg, #1e5799 0%, #516395 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #1e5799 0%,#516395 100%); /* Chrome10-25,Safari5.1-6 */
@@ -25,7 +27,13 @@ body {
   padding: 1em 2em 2em 2em; /* TODO: check why top padding is larger */
 }
 
-span {
+.header-container {
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.required {
   color: var(--required-color)
 }
 
@@ -67,23 +75,19 @@ input[type=text]:focus, input[type=number]:focus, textarea:focus, select[name=ro
   transition: .3s width ease-in-out;
   position: relative;
   vertical-align: bottom; /* TODO: check browser compadibility */
-  top: 2px;/* TODO: fix when layout is done */
-
+  top: 2px;
 }
 
 input[type=text]:focus+.line, input[type=number]:focus+.line, textarea:focus+.line, select[name=role]:focus+.line, select[name=likemost]:focus+.line {
   width: 100%;
-  background-color: #02add7;
+  background-color: var(--active-blue-color);
 }
 
 ::placeholder {
   font-size: 120%;
 }
 
-
-
 select[name=role], select[name=likemost] {
-  color: rgb(106, 106, 106); /* TODO: Make sure this is same color as placeholder text in input[type=text/age] */
   background-color: inherit;
   display: block;
   border: none;
@@ -92,10 +96,34 @@ select[name=role], select[name=likemost] {
   width: 100%;
 }
 
-.select-container {
+.text-number-select-container {
     border-bottom: 2px solid var(--not-active-grey-color);
     text-align: center;
     line-height: 0;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.radio-checkbox-container {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.radio-checkbox-text {
+  font-size: 80%;
+  margin-left: 5px;
+}
+
+#submit {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  background-color: var(--active-blue-color);
+  color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 150%;
+  display: block;
+  text-align: center;
 }

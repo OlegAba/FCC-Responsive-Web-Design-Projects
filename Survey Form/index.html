@@ -21,33 +21,34 @@
 <body>
 
   <div id="main">
-      <h1 id="title">FCC Survey Form</h1>
-      <p id="description">Let us know how we can improve freeCodeCamp</p>
-      <p><span>* Required</span></p>
+      <div class="header-container">
+        <h1 id="title">FCC Survey Form</h1>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+      </div>
 
       <form id="survey-form">
-        Name *
-        <div class="select-container">
-          <input type="text" name="Name" placeholder="Enter your name">
+        Full Name <span class="required">*</span>
+        <div class="text-number-select-container">
+          <input type="text" name="Name" placeholder="Enter your full name">
           <div class="line"></div>
         </div>
 
-        Email *
-        <div class="select-container">
+        Email <span class="required">*</span>
+        <div class="text-number-select-container">
           <input type="text" name="Email" placeholder="Enter your Email">
           <div class="line"></div>
         </div>
 
-        Age *
-        <div class="select-container">
+        Age <span class="required">*</span>
+        <div class="text-number-select-container">
           <input type="number" name="Age" min="1" max="120" placeholder="Enter your Age">
           <div class="line"></div>
         </div>
 
         Which option best describes your current role?
-        <div class="select-container">
+        <div class="text-number-select-container">
           <select name="role">
-            <option value="" disabled selected>Select an option</option>
+            <option value="" disabled selected>Select an option</option> <!-- TODO: put value -->
             <option value="Student">Student</option>
             <option value="Full Time Job">Full Time Job</option>
             <option value="Full Time Learner">Full Time Learner</option>
@@ -57,13 +58,15 @@
           <div class="line"></div>
         </div>
 
-        How likely is that you would recommend freeCodeCamp to a friend? * <br>
-        <input type="radio" name="recommend" value="Definitely">Definitely<br>
-        <input type="radio" name="recommend" value="Maybe" checked>Maybe<br>
-        <input type="radio" name="recommend" value="Not Sure">Not Sure<br>
+        How likely is that you would recommend freeCodeCamp to a friend? <span class="required">*</span>
+        <div class="radio-checkbox-container">
+          <input type="radio" name="recommend" value="Definitely"><span class="radio-checkbox-text">Definitely</span><br>
+          <input type="radio" name="recommend" value="Maybe" checked><span class="radio-checkbox-text">Maybe</span><br>
+          <input type="radio" name="recommend" value="Not Sure"><span class="radio-checkbox-text">Not Sure</span><br>
+        </div>
 
-        What do you like most in FCC?<br>
-        <div class="select-container">
+        What do you like most in FCC?
+        <div class="text-number-select-container">
           <select name="likemost">
             <option value="" disabled selected>Select an option</option>
             <option value="Challenges">Challenges</option>
@@ -74,25 +77,29 @@
           <div class="line"></div>
         </div>
 
-        Things that should be improved in the future (Check all that apply)<br>
-        <input type="checkbox" name="improved" value="Front-end projects">Front-end Projects <br>
-        <input type="checkbox" name="improved" value="Back-end projects">Back-end Projects <br>
-        <input type="checkbox" name="improved" value="Data Visualization">Data Visualization <br>
-        <input type="checkbox" name="improved" value="Challenges">Challenges <br>
-        <input type="checkbox" name="improved" value="Open Source Community">Open Source Community <br>
-        <input type="checkbox" name="improved" value="Gitter help rooms">Gitter help rooms <br>
-        <input type="checkbox" name="improved" value="Videos">Videos <br>
-        <input type="checkbox" name="improved" value="City Meetups">City Meetups <br>
-        <input type="checkbox" name="improved" value="Wiki">Wiki <br>
-        <input type="checkbox" name="improved" value="Forum">Forum <br>
-        <input type="checkbox" name="improved" value="Additional Courses">Additional Courses <br>
+        Things that should be improved in the future (Check all that apply)
+        <div class="radio-checkbox-container">
+          <input type="checkbox" name="improved" value="Front-end projects"><span class="radio-checkbox-text">Front-end Projects</span><br>
+          <input type="checkbox" name="improved" value="Back-end projects"><span class="radio-checkbox-text">Back-end Projects</span><br>
+          <input type="checkbox" name="improved" value="Data Visualization"><span class="radio-checkbox-text">Data Visualization</span><br>
+          <input type="checkbox" name="improved" value="Challenges"><span class="radio-checkbox-text">Challenges</span><br>
+          <input type="checkbox" name="improved" value="Open Source Community"><span class="radio-checkbox-text">Open Source Community</span><br>
+          <input type="checkbox" name="improved" value="Gitter help rooms"><span class="radio-checkbox-text">Gitter help rooms</span><br>
+          <input type="checkbox" name="improved" value="Videos"><span class="radio-checkbox-text">Videos</span><br>
+          <input type="checkbox" name="improved" value="City Meetups"><span class="radio-checkbox-text">City Meetups</span><br>
+          <input type="checkbox" name="improved" value="Wiki"><span class="radio-checkbox-text">Wiki</span><br>
+          <input type="checkbox" name="improved" value="Forum"><span class="radio-checkbox-text">Forum</span><br>
+          <input type="checkbox" name="improved" value="Additional Courses"><span class="radio-checkbox-text">Additional Courses</span><br>
+        </div>
 
-        Any Comments or Suggestions? <br>
-        <div class="select-container">
+        Any Comments or Suggestions?
+        <div class="text-number-select-container">
           <textarea name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
           <div class="line"></div>
         </div>
       </form>
+
+      <a href="" id="submit">Submit</a>
 
   </div>
 
