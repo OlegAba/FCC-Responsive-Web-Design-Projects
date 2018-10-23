@@ -37,7 +37,7 @@ body {
   color: var(--required-color)
 }
 
-input[type=text], input[type=number], textarea {
+input[type=text], input[type=number], textarea, #email {
   border: none;
   background-color: inherit;
   display: block;
@@ -55,7 +55,7 @@ textarea {
   resize: vertical;
 }
 
-input[type=text]:focus, input[type=number]:focus, textarea:focus, select[name=role]:focus, select[name=likemost]:focus {
+input[type=text]:focus, input[type=number]:focus, textarea:focus, select[name=role]:focus, select[name=likemost]:focus, #email:focus {
   outline: none;
 }
 
@@ -78,7 +78,7 @@ input[type=text]:focus, input[type=number]:focus, textarea:focus, select[name=ro
   top: 2px;
 }
 
-input[type=text]:focus+.line, input[type=number]:focus+.line, textarea:focus+.line, select[name=role]:focus+.line, select[name=likemost]:focus+.line {
+input[type=text]:focus+.line, input[type=number]:focus+.line, textarea:focus+.line, select[name=role]:focus+.line, select[name=likemost]:focus+.line, #email:focus+.line {
   width: 100%;
   background-color: var(--active-blue-color);
 }
@@ -115,15 +115,17 @@ select[name=role], select[name=likemost] {
 }
 
 #submit {
-  margin-top: 2em;
-  margin-bottom: 1em;
   text-decoration: none;
   background-color: var(--active-blue-color);
+  width: 100%;
   color: white;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 150%;
-  display: block;
   text-align: center;
+}
+
+#submit:focus {
+  outline: none;
 }

@@ -20,6 +20,9 @@
 
 <body>
 
+  <!-- FreeCodeCamp Test Suite -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
   <div id="main">
       <div class="header-container">
         <h1 id="title">FCC Survey Form</h1>
@@ -27,27 +30,27 @@
       </div>
 
       <form id="survey-form">
-        Full Name <span class="required">*</span>
+        <label for="name" id="name-label" required>Full Name <span class="required">*</span></label>
         <div class="text-number-select-container">
-          <input type="text" name="Name" placeholder="Enter your full name">
+          <input type="text" name="name" placeholder="Enter your full name" id="name" required>
           <div class="line"></div>
         </div>
 
-        Email <span class="required">*</span>
+        <label for="email" id="email-label" required>Email <span class="required">*</span></label>
         <div class="text-number-select-container">
-          <input type="text" name="Email" placeholder="Enter your Email">
+          <input type="email" name="email" placeholder="Enter your Email" id="email" required>
           <div class="line"></div>
         </div>
 
-        Age <span class="required">*</span>
+        <label for="age" id="number-label" required>Age <span class="required">*</span></label>
         <div class="text-number-select-container">
-          <input type="number" name="Age" min="1" max="120" placeholder="Enter your Age">
+          <input type="number" name="age" min="1" max="120" placeholder="Enter your Age" id="number" required>
           <div class="line"></div>
         </div>
 
-        Which option best describes your current role?
+        <label for="role">Which option best describes your current role?</label>
         <div class="text-number-select-container">
-          <select name="role">
+          <select name="role" id="dropdown">
             <option value="" disabled selected>Select an option</option> <!-- TODO: put value -->
             <option value="Student">Student</option>
             <option value="Full Time Job">Full Time Job</option>
@@ -58,16 +61,16 @@
           <div class="line"></div>
         </div>
 
-        How likely is that you would recommend freeCodeCamp to a friend? <span class="required">*</span>
+        <label for="recommend" required>How likely is that you would recommend freeCodeCamp to a friend? <span class="required">*</span></label>
         <div class="radio-checkbox-container">
           <input type="radio" name="recommend" value="Definitely"><span class="radio-checkbox-text">Definitely</span><br>
           <input type="radio" name="recommend" value="Maybe" checked><span class="radio-checkbox-text">Maybe</span><br>
           <input type="radio" name="recommend" value="Not Sure"><span class="radio-checkbox-text">Not Sure</span><br>
         </div>
 
-        What do you like most in FCC?
+        <label for="likemost">What do you like most in FCC?</label>
         <div class="text-number-select-container">
-          <select name="likemost">
+          <select name="likemost" id="dropdown">
             <option value="" disabled selected>Select an option</option>
             <option value="Challenges">Challenges</option>
             <option value="Projects">Projects</option>
@@ -77,7 +80,7 @@
           <div class="line"></div>
         </div>
 
-        Things that should be improved in the future (Check all that apply)
+        <label for="improved">Things that should be improved in the future (Check all that apply)</label>
         <div class="radio-checkbox-container">
           <input type="checkbox" name="improved" value="Front-end projects"><span class="radio-checkbox-text">Front-end Projects</span><br>
           <input type="checkbox" name="improved" value="Back-end projects"><span class="radio-checkbox-text">Back-end Projects</span><br>
@@ -92,14 +95,14 @@
           <input type="checkbox" name="improved" value="Additional Courses"><span class="radio-checkbox-text">Additional Courses</span><br>
         </div>
 
-        Any Comments or Suggestions?
+        <label for="comments">Any Comments or Suggestions?</label>
         <div class="text-number-select-container">
           <textarea name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
           <div class="line"></div>
         </div>
-      </form>
 
-      <a href="" id="submit">Submit</a>
+        <input type="submit" value="Submit" id="submit">
+      </form>
 
   </div>
 
