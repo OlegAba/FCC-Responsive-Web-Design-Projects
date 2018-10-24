@@ -65,7 +65,7 @@ select:focus {
   transition: .3s width ease-in-out;
   position: relative;
   vertical-align: bottom;
-  top: 2px;
+
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -167,6 +167,10 @@ select {
 
   #main {
     font-size: 80%;
+  }
+
+  ::placeholder {
+    font-size: 90%;
   }
 
   select {
