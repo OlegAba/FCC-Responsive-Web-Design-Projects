@@ -68,6 +68,12 @@ select:focus {
   top: 2px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+ }
+
 input[type=text]:focus+.line, input[type=email]:focus+.line,
 input[type=number]:focus+.line, textarea:focus+.line,
 select:focus+.line {
@@ -151,4 +157,28 @@ select {
   textarea {
     font-size: 60%;
   }
+}
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    margin: 2em;
+  }
+
+  #main {
+    font-size: 80%;
+  }
+
+  select {
+    font-size: 45%
+  }
+
+  radio-checkbox-text {
+    font-size: 50%
+  }
+
+  #submit {
+    font-size: 120%;
+  }
+
 }
