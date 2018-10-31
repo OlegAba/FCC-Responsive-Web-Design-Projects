@@ -1,7 +1,5 @@
 /* CSS Variables */
-:root {
-
-}
+:root {}
 
 html {
   overflow: hidden;
@@ -15,58 +13,61 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.main-container {
-
-}
-
 #header {
   width: 100%;
-  background-color: white;
   position: fixed;
   overflow: hidden;
-  z-index: 10000;
-  -webkit-box-shadow: 0 8px 6px -6px #999;
-  -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #999;
+  background-color: white;
 }
 
 .header-container {
-  width: inherit;
   max-width: 1350px;
-  height: 80px;
   margin: 0 auto;
-
   display: flex;
-  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  font-family: sans-serif;
   align-items: center;
+
+  /* Removes user from highlighting nav-link */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.company-logo {
-  padding-left: 40px;
-}
-
-h1 {
+#company-logo {
   font-family: 'Monoton', cursive;
   color: black;
+  background-color: red;
 }
 
-#nav-bar ul {
+.nav-bar-items {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-bar-items ul {
   list-style-type: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-#nav-bar ul li {
+.nav-bar-items ul li {
   font-size: 120%;
 }
 
 .nav-link {
   text-decoration: none;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
-.background-building {
+.nav-bar-toggle {
+  display: none;
+}
+
+.banner {
   height: 100vh;
-  width: 100%;
+  width: auto;
 
   background: url("building-background1.jpg");
   -webkit-background-size: cover;
@@ -78,19 +79,58 @@ h1 {
 }
 
 .main {
-  height: 100vh;
+  height: 200vh;
   width: 100%;
-  background-color: white;
+  background-color: blue;
   display: block;
 }
 
 @media only screen and (max-width: 1024px) {
-  .background-building {
+
+  .banner {
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
+
+    width: 100%;
+    height: 0;
+    padding-top: 66%;
   }
+
+  .company-toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-bar-items ul,
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar-items {
+    display: none;
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow { /* TODO: Change name */
+    display: flex;
+  }
+
+  .nav-link {
+    padding-left: 0;
+  }
+
+  .nav-bar-toggle {
+    align-self: flex-end;
+    display: initial;
+    cursor: pointer;
+    align-self: center;
+  }
+
 }
