@@ -24,20 +24,19 @@ body {
   max-width: 1350px;
   margin: 0 auto;
   display: flex;
-  padding: 0 10px 0 10px;
-  font-family: sans-serif;
+  padding: 0;
   align-items: center;
+  height: 60px;
 
-  /* Removes user from highlighting nav-link */
+  /* Removes user from highlighting header text */
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
 #company-logo {
-  font-family: 'Monoton', cursive;
   color: black;
-  background-color: red;
+  padding-left: 15px;
 }
 
 .nav-bar-items {
@@ -49,7 +48,7 @@ body {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 15px 0 0;
 }
 
 .nav-bar-items ul li {
@@ -62,6 +61,7 @@ body {
 }
 
 .nav-bar-toggle {
+  padding-right: 15px;
   display: none;
 }
 
@@ -69,7 +69,10 @@ body {
   height: 100vh;
   width: auto;
 
-  background: url("building-background1.jpg");
+  /* background: url("building-background1.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4)),
+  url("building-background1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -78,11 +81,23 @@ body {
   background-attachment: fixed;
 }
 
+.banner-text {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 200%;
+}
+
 .main {
   height: 200vh;
   width: 100%;
-  background-color: blue;
+  background-color: white;
   display: block;
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -95,9 +110,25 @@ body {
     background-repeat: no-repeat;
     background-position: top;
 
-    width: 100%;
     height: 0;
     padding-top: 66%;
+  }
+
+  .banner-text {
+    justify-content: flex-end;
+    font-size: 80%;
+  }
+
+  .banner-text h2 {
+    padding-bottom: 13%;
+  }
+
+  .header-container {
+    height: auto;
+  }
+
+  #company-logo {
+    font-size: 60%; /* Make dynamic */
   }
 
   .company-toggle-container {
@@ -105,6 +136,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid black;
   }
 
   .nav-bar-items ul,
@@ -113,17 +145,22 @@ body {
     align-items: flex-start;
   }
 
+  .nav-bar-items ul li {
+    padding: 15px 0 15px 15px;
+  }
+
   .nav-bar-items {
     display: none;
     margin-left: 0;
   }
 
-  .Navbar__ToggleShow { /* TODO: Change name */
-    display: flex;
+  .Navbar__ToggleShow { /* TODO: Change name (scripts.js as well) */
+    display: flex;      /* TODO: Add smooth animation and make bottom border appear */
   }
 
   .nav-link {
     padding-left: 0;
+    font-size: 90%;
   }
 
   .nav-bar-toggle {
