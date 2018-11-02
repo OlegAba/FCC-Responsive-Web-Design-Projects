@@ -11,6 +11,7 @@ body {
   height: 100%;
   overflow: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 120%;
 }
 
 #header {
@@ -72,7 +73,7 @@ body {
   /* background: url("building-background1.jpg"); */
   background: linear-gradient(rgba(0, 0, 0, 0.4),
   rgba(0, 0, 0, 0.4)),
-  url("building-background1.jpg");
+  url("images/banner-background.jpg"); /* TODO: Switch into HTML */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,13 +93,48 @@ body {
   font-size: 200%;
 }
 
-.main {
-  height: 200vh;
-  width: 100%;
-  background-color: white;
-  display: block;
-  color: white;
+.section-one {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.section-one-background {
+  margin: 0 0 60px 0;
+}
+
+.section-one-background h3 {
+  width: 100%;
+  text-align: center;
+  margin: 60px 0 30px 0;
+  font-size: 200%;
+}
+
+.exterior-section {
+  width: 325px;
+  margin: 30px 10px 0 10px;
+}
+
+.img {
+  width: 325px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover; /* TODO: Add browser support (like banner) */
+  margin: 0 auto;
+}
+
+.exterior-section .location,
+.exterior-section .size,
+.exterior-section .description {
+  margin-top: 30px;
+}
+
+.section-two-background {
+  margin: 0 0 60px 0;
+}
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -109,18 +145,18 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
+    z-index: -10;
 
     height: 0;
     padding-top: 66%;
   }
 
   .banner-text {
-    justify-content: flex-end;
     font-size: 80%;
   }
 
   .banner-text h2 {
-    padding-bottom: 13%;
+    padding-bottom: 66%;
   }
 
   .header-container {
@@ -168,6 +204,20 @@ body {
     display: initial;
     cursor: pointer;
     align-self: center;
+  }
+
+  .section-one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exterior-section {
+    width: 80%;
+  }
+
+  .img {
+    width: 100%;
+    background-position: center;
   }
 
 }
