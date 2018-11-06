@@ -1,9 +1,7 @@
-/* CSS Variables */
-:root {}
-
 html {
   overflow: hidden;
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -19,6 +17,7 @@ body {
   position: fixed;
   overflow: hidden;
   background-color: white;
+  z-index: 2; /* NOTE: for iframe */
 }
 
 .header-container {
@@ -67,33 +66,45 @@ body {
 }
 
 .banner {
-  height: 100vh;
-  width: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
 
+.banner::before {
   /* background: url("building-background1.jpg"); */
   background: linear-gradient(rgba(0, 0, 0, 0.4),
   rgba(0, 0, 0, 0.4)),
   url("images/banner-background.jpg"); /* TODO: Switch into HTML */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
 }
 
 .banner-text {
-  color: white;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  text-transform: uppercase;
   text-align: center;
   font-size: 200%;
+  color: white;
 }
 
-.section-one {
+.section-one-background {
+  background-color: white;
+}
+
+.section-one,
+.section-three {
   max-width: 1350px;
   margin: 0 auto;
   display: flex;
@@ -101,24 +112,31 @@ body {
   justify-content: center;
 }
 
-.section-one-background {
-  margin: 0 0 60px 0;
+.section-one-background,
+.section-two-background,
+.section-three-background,
+.section-four-background {
+  padding-top: 20px; /* NOTE: Removes space between divs */
 }
 
-.section-one-background h3 {
+.section-one-background h3,
+.section-two-background h3,
+.section-three-background h3,
+.section-four-background h3 {
   width: 100%;
   text-align: center;
-  margin: 60px 0 30px 0;
   font-size: 200%;
+  margin: 0 0 0 0;
 }
 
 .exterior-section {
   width: 325px;
-  margin: 30px 10px 0 10px;
+  padding: 0 10px 0 10px;
+  flex: 1;
 }
 
 .img {
-  width: 325px;
+  width: 100%;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover; /* TODO: Add browser support (like banner) */
@@ -132,31 +150,71 @@ body {
 }
 
 .section-two-background {
-  margin: 0 0 60px 0;
+  background-color: rgb(28, 42, 74);
+  color: white;
 }
 
+.youtube-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px 0 10px;
+}
+
+.iframe-container {
+  position: relative;
+  padding: 25px 0 56.25% 0;
+  height: 0;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* NOTE: For header */
+}
+
+.section-three-background {
+  background-color: rgb(35, 51, 82);
+  color: white;
+}
+
+.icon-container {
+  margin: 0 10px 0 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 450%;
+}
+
+.section-four-background {
+  height: 1000px;
+  background-color: white;
+}
 
 @media only screen and (max-width: 1024px) {
 
   .banner {
+    min-height: 0;
+    height: 0;
+    padding-top: 66%;
+    position: static;
+  }
+
+  .banner-text {
+    padding-bottom: 66%;
+    font-size: 80%;
+  }
+
+  .banner::before {
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: top;
-    z-index: -10;
-
-    height: 0;
-    padding-top: 66%;
-  }
-
-  .banner-text {
-    font-size: 80%;
-  }
-
-  .banner-text h2 {
-    padding-bottom: 66%;
   }
 
   .header-container {
@@ -172,7 +230,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid black;
   }
 
   .nav-bar-items ul,
@@ -206,18 +263,33 @@ body {
     align-self: center;
   }
 
-  .section-one {
+  .section-one-background h3,
+  .section-two-background h3,
+  .section-three-background h3,
+  .section-three-background h3{
+    font-size: 160%
+  }
+
+  .section-one,
+  .section-three {
     flex-direction: column;
     align-items: center;
+    max-width: 650px;
+    padding: 0 10px 0 10px;
   }
 
   .exterior-section {
-    width: 80%;
+    width: 100%;
   }
 
   .img {
     width: 100%;
     background-position: center;
   }
+
+  .youtube-container {
+    max-width: 650px;
+  }
+
 
 }
