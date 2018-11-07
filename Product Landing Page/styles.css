@@ -137,8 +137,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 40px;
-  padding-bottom: 40px;
+  /* margin-top: 40px
+  padding-bottom: 40px; */
 }
 
 .section-one-background,
@@ -164,8 +164,9 @@ body {
 
 .exterior-section {
   width: 325px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 40px 10px;
   flex: 1;
+  margin-top: 40px;
 }
 
 .location {
@@ -230,9 +231,10 @@ iframe {
 }
 
 .icon-container {
-  margin: 0 10px 0 10px;
+  margin: 40px 10px 0 10px;
   padding-top: 10px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .icon {
@@ -323,7 +325,7 @@ input[type="submit"]:focus { outline: none; }
   }
 
   #company-logo {
-    font-size: 60%; /* Make dynamic */
+    font-size: 60%;
   }
 
   .company-toggle-container {
@@ -355,7 +357,7 @@ input[type="submit"]:focus { outline: none; }
   }
 
   .Navbar__ToggleShow { /* TODO: Change name (scripts.js as well) */
-    display: flex;      /* TODO: Add smooth animation and make bottom border appear */
+    display: flex;
   }
 
   .nav-link {
@@ -384,6 +386,10 @@ input[type="submit"]:focus { outline: none; }
     align-items: center;
     max-width: 650px;
     padding: 0 10px 0 10px;
+  }
+
+  .section-four {
+    padding-bottom: 40px;
   }
 
   .exterior-section {
