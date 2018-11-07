@@ -1,4 +1,11 @@
-
+/* CSS Variables */
+:root {
+    --blue-text-color: rgb(28, 42, 74);
+    --light-blue-color: rgb(72, 103, 169);
+    --beige-color: rgb(196, 171, 135);
+    --gray-color: rgb(150, 150, 149);
+    --purple-color: rgb(88, 99, 126);
+}
 
 html {
   overflow: hidden;
@@ -39,8 +46,14 @@ body {
 }
 
 #company-logo {
-  color: black;
+  color: var(--blue-text-color);
   padding-left: 15px;
+  display: flex;
+}
+
+.company-icon {
+  font-size: 220%;
+  align-self: center;
 }
 
 .nav-bar-items {
@@ -62,11 +75,17 @@ body {
 .nav-link {
   text-decoration: none;
   padding-left: 40px;
+  color: var(--beige-color);
+}
+
+.nav-link:hover {
+  opacity: 0.5;
 }
 
 .nav-bar-toggle {
   padding-right: 15px;
   display: none;
+  color: var(--beige-color);
 }
 
 .banner {
@@ -99,8 +118,12 @@ body {
 .banner-text {
   text-transform: uppercase;
   text-align: center;
-  font-size: 200%;
+  font-size: 160%;
   color: white;
+}
+
+.banner-text h2 {
+  font-style: italic;
 }
 
 .section-one-background {
@@ -114,13 +137,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-one-background,
 .section-two-background,
 .section-three-background,
 .section-four-background {
-  padding-top: 20px; /* NOTE: Removes space between divs */
+  padding-top: 40px; /* NOTE: Removes space between divs */
 }
 
 .section-one-background h3,
@@ -130,13 +155,30 @@ body {
   width: 100%;
   text-align: center;
   font-size: 200%;
-  margin: 0 0 0 0;
+  margin: 0;
+}
+
+.section-one-background h3 {
+  color: var(--blue-text-color);
 }
 
 .exterior-section {
   width: 325px;
   padding: 0 10px 0 10px;
   flex: 1;
+}
+
+.location {
+  font-weight: bold;
+}
+
+.location,
+.price {
+  color: var(--light-blue-color);
+}
+
+.description {
+  color: var(--gray-color);
 }
 
 .img {
@@ -154,7 +196,7 @@ body {
 }
 
 .section-two-background {
-  background-color: rgb(28, 42, 74);
+  background-color: var(--blue-text-color);
   color: white;
 }
 
@@ -162,13 +204,15 @@ body {
 .section-four {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 40px 10px;
+  margin-top: 40px;
 }
 
 .iframe-container {
   position: relative;
   padding: 25px 0 56.25% 0;
   height: 0;
+  border: 2px solid var(--beige-color);
 }
 
 iframe {
@@ -193,22 +237,32 @@ iframe {
 
 .icon {
   font-size: 450%;
+  color: var(--light-blue-color);
+}
+
+.icon-description {
+  color: var(--gray-color);
 }
 
 .section-four-background {
   background-color: white;
-  padding-bottom: 20px;
+}
+
+.section-four-background h3 {
+  color: var(--blue-color);
 }
 
 .input-container {
   width: 100%;
-  margin: 10px 0 10px 0;
+  margin: 30px 0 30px 0;
   display: flex;
 }
 
 label {
   width: 200px;
   padding: 10px 0 10px 0;
+  font-weight: bold;
+  color: var(--light-blue-color);
 }
 
 input[type="text"],
@@ -219,6 +273,7 @@ textarea {
   font-size: 100%;
   font-style: italic;
   padding: 10px;
+  border: 1px solid;
 }
 
 textarea {
@@ -228,16 +283,18 @@ textarea {
 
 input[type="submit"] {
   text-decoration: none;
-  border: none;
-  background-color: blue;
+  color: var(--beige-color);
+  border: 1px solid var(--blue-text-color);
+  background-color: white;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 150%;
   text-align: center;
-  margin-top: 20px;
+  cursor: pointer;
 }
 
+input[type="submit"]:focus { outline: none; }
 
 @media only screen and (max-width: 1024px) {
 
@@ -280,15 +337,21 @@ input[type="submit"] {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
 
   .nav-bar-items ul li {
     padding: 15px 0 15px 15px;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid;
   }
 
   .nav-bar-items {
     display: none;
     margin-left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .Navbar__ToggleShow { /* TODO: Change name (scripts.js as well) */
