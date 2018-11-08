@@ -24,6 +24,9 @@
     <div class="header-container">
       <div class="company-toggle-container">
         <div id="company-logo">
+          <div class="logo">
+            <img id="header-img" src="http://radonsysteminstallers.com/wp-content/uploads/2015/08/HouseLogo-14.png " alt="logo"/>
+          </div>
           <h1>HOMESIGN</h1> <!-- TODO: Make lowercase and change to upper case in CSS -->
         </div>
         <div class="nav-bar-toggle">
@@ -31,11 +34,11 @@
         </div>
       </div>
 
-      <nav class="nav-bar-items">
+      <nav id="nav-bar" class="nav-bar-items">
         <ul>
-          <li><a href="" class="nav-link">EXPLORE</a></li>
-          <li><a href="" class="nav-link">DISCOVER</a></li>
-          <li><a href="" class="nav-link">EXPERIENCE</a></li>
+          <li><a href="#explore" class="nav-link">EXPLORE</a></li>
+          <li><a href="#discover" class="nav-link">DISCOVER</a></li>
+          <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
         </ul>
       </nav>
     </div>
@@ -48,6 +51,7 @@
     </div>
   </div>
 
+  <span class="anchor" id="explore"></span>
   <div class="section-one-background">
     <h3>Latest Exterior Designs</h3>
       <div class="section-one">
@@ -95,6 +99,7 @@
       </div>
     </div>
 
+    <span class="anchor" id="discover"></span>
     <div class="section-two-background">
       <h3>Check Out Our Work</h3>
       <div class="youtube-container">
@@ -106,6 +111,7 @@
       </div>
     </div>
 
+    <span class="anchor" id="experience"></span>
     <div class="section-three-background">
       <h3>Designers you can trust</h3>
       <div class="section-three">
@@ -132,7 +138,7 @@
     <div class="section-four-background">
       <h3>Get Started</h3>
       <div class="section-four">
-        <form class="get-started" action="index.html" method="post">
+        <form id="form" class="get-started" action="https://www.freecodecamp.com/email-submit" method="post">
           <div class="input-container">
             <label for="name" required>Full Name</label>
             <input type="text" name="name" placeholder="Enter your full name" required>
@@ -140,7 +146,7 @@
 
           <div class="input-container">
             <label for="email" required>Email</label>
-            <input type="email" name="email" placeholder="Enter your Email" required>
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required>
           </div>
 
           <div class="input-container">
@@ -148,12 +154,14 @@
             <textarea name="message" rows="4" placeholder="Enter your message here..." required></textarea>
           </div>
 
-          <input type="submit" value="SUBMIT">
+          <input id="submit" type="submit" value="SUBMIT">
         </form>
       </div>
     </div>
 
-
+  <!-- FreeCodeCamp Test Suite -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- Navbar Toggle-->
   <script type="text/javascript" src="navbarToggle.js"></script>
 
 </body>
