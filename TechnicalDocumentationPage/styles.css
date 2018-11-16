@@ -2,53 +2,53 @@
 :root {
 }
 
-html, body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
 
-.left-side-nav {
-  height: 100%;
-  width: 300px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  background-color: red;
-}
+@media only screen and (min-width: 1024px) {
 
-.left-side-nav header {
-  text-align: center;
-  background-color: yellow;
-  margin: 0;
-  padding: 15px 0 15px 0;
-}
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
 
-.left-side-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .left-side-nav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: red;
+  }
 
-.left-side-nav ul li {
-  border-top: 2px solid;
-}
+  .left-side-nav header {
+    text-align: center;
+    background-color: yellow;
+    margin: 0;
+    padding: 15px 0 15px 0;
+  }
 
-.nav-link {
-  text-decoration: none;
-}
+  .left-side-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.main-container {
-  height: 100%;
-  overflow: scroll;
-  background-color: blue;
-  color: white;
-  margin-left: 300px; /* Width of left-side-nav */
-}
+  .left-side-nav ul li {
+    border-top: 2px solid;
+  }
 
+  .nav-link {
+    text-decoration: none;
+  }
 
-@media only screen and (max-width: 1024px) {
+  .main-container {
+    height: 100%;
+    overflow: scroll;
+    background-color: blue;
+    color: white;
+    margin-left: 300px; /* Width of left-side-nav */
+  }
 
 }
