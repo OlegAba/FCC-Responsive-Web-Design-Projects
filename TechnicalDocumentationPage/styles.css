@@ -15,6 +15,11 @@ html, body {
 
 .left-side-nav {
   background-color: red;
+
+  /* Removes ability to highlight header text */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .header-toggle-container {
@@ -59,6 +64,23 @@ html, body {
 
 .main-doc {
   position: relative;
+  background-color: blue;
+  padding: 40px;
+}
+
+.main-doc section {
+  background-color: yellow;
+}
+
+.section-container {
+  padding-left: 20px;
+}
+
+.code-container {
+  padding-left: 20px;
+}
+
+pre {
   background-color: white;
 }
 
@@ -88,11 +110,13 @@ html, body {
     display: none;
   }
 
+  .nav-bar-items {
+    display: block;
+  }
+
   .main-doc {
     height: 100%;
     overflow: scroll;
-    background-color: blue;
-    color: white;
     margin-left: 300px; /* Width of left-side-nav */
   }
 
