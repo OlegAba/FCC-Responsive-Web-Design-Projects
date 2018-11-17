@@ -2,14 +2,68 @@
 :root {
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-container {
+  height: 100%;
+  overflow: scroll;
+}
+
+.left-side-nav {
+  background-color: red;
+}
+
+.header-toggle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* TODO: Change to header-toggle ... */
+.left-side-nav header {
+  text-align: left;
+  background-color: yellow;
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+
+.toggle {
+  background-color: yellow;
+  margin: auto 0;
+  display: initial;
+  cursor: pointer;
+}
+
+.nav-bar-items {
+  display: none;
+}
+
+.toggle-show { display: block; }
+
+.left-side-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-side-nav ul li {
+  border-top: 2px solid;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.main-doc {
+  position: relative;
+  background-color: white;
+}
+
 
 @media only screen and (min-width: 1024px) {
-
-  html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-  }
 
   .left-side-nav {
     height: 100%;
@@ -19,31 +73,22 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
-    background-color: red;
   }
 
+  .header-toggle-container {
+    display: block;
+  }
+
+  /* TODO: Change to header-toggle... */
   .left-side-nav header {
     text-align: center;
-    background-color: yellow;
-    margin: 0;
-    padding: 15px 0 15px 0;
   }
 
-  .left-side-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .toggle {
+    display: none;
   }
 
-  .left-side-nav ul li {
-    border-top: 2px solid;
-  }
-
-  .nav-link {
-    text-decoration: none;
-  }
-
-  .main-container {
+  .main-doc {
     height: 100%;
     overflow: scroll;
     background-color: blue;
