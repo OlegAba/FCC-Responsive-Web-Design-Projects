@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
+  <!-- TODO: Add Favicon -->
+
 </head>
 
 <body>
@@ -21,7 +23,7 @@
   <div class="main-container">
     <div class="left-side-nav">
       <div class="header-toggle-container">
-         <header>JS Documentation</header>
+         <header><span>JS</span> Documentation</header>
          <div class="toggle">
           <i class="fas fa-bars"></i>
         </div>
@@ -29,27 +31,27 @@
 
       <div class="nav-bar-items">
         <ul>
-          <li><a href="" class="nav-link">Introduction</a></li>
-          <li><a href="" class="nav-link">What You Should Already Know</a></li>
-          <li><a href="" class="nav-link">Javascript and Java</a></li>
-          <li><a href="" class="nav-link">Hello World</a></li>
-          <li><a href="" class="nav-link">Variables</a></li>
-          <li><a href="" class="nav-link">Declaring Variables</a></li>
-          <li><a href="" class="nav-link">Variable Scope</a></li>
-          <li><a href="" class="nav-link">Global Variables</a></li>
-          <li><a href="" class="nav-link">Global Variables</a></li>
-          <li><a href="" class="nav-link">Constants</a></li>
-          <li><a href="" class="nav-link">Data Types</a></li>
-          <li><a href="" class="nav-link">if...else Statement</a></li>
-          <li><a href="" class="nav-link">while Statement</a></li>
-          <li><a href="" class="nav-link">Function Declarations</a></li>
-          <li><a href="" class="nav-link">Reference</a></li>
+          <a href="" class="nav-link"><li>Introduction</li></a>
+          <a href="" class="nav-link"><li>What You Should Already Know</li></a>
+          <a href="" class="nav-link"><li>Javascript and Java</li></a>
+          <a href="" class="nav-link"><li>Hello World</li></a>
+          <a href="" class="nav-link"><li>Variables</li></a>
+          <a href="" class="nav-link"><li>Declaring Variables</li></a>
+          <a href="" class="nav-link"><li>Variable Scope</li></a>
+          <a href="" class="nav-link"><li>Global Variables</li></a>
+          <a href="" class="nav-link"><li>Global Variables</li></a>
+          <a href="" class="nav-link"><li>Constants</li></a>
+          <a href="" class="nav-link"><li>Data Types</li></a>
+          <a href="" class="nav-link"><li>if...else Statement</li></a>
+          <a href="" class="nav-link"><li>while Statement</li></a>
+          <a href="" class="nav-link"><li>Function Declarations</li></a>
+          <a href="" class="nav-link"><li>Reference</li></a>
         </ul>
       </div>
     </div>
 
-    <div class="main-doc">
-      <section>
+    <main id="main-doc">
+      <section class="main-section">
         <header>Introduction</header>
         <div class="section-container">
           <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
@@ -61,7 +63,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>What You Should Already Know</header>
         <div class="section-container">
           <p>This guide assumes you have the following basic background:</p>
@@ -73,7 +75,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>JavaScript and Java</header>
         <div class="section-container">
           <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
@@ -82,7 +84,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Hello World</header>
         <div class="section-container">
           <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
@@ -96,7 +98,7 @@ greetMe("World");</code>
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Variables</header>
         <div class="section-container">
           <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
@@ -105,7 +107,7 @@ greetMe("World");</code>
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Declaring Variables</header>
         <div class="section-container">
           <p>You can declare a variable in three ways:</p>
@@ -127,7 +129,7 @@ greetMe("World");</code>
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Variable Scope</header>
         <div class="section-container">
           <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
@@ -157,7 +159,7 @@ console.log(y);
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Constants</header>
         <div class="section-container">
           <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
@@ -186,7 +188,7 @@ MY_OBJECT.key = "otherValue";</code>
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Data Types</header>
         <div class="section-container">
           <p>The latest ECMAScript standard defines seven data types:</p>
@@ -206,7 +208,7 @@ MY_OBJECT.key = "otherValue";</code>
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>if..else Statement</header>
         <div class="section-container">
           <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
@@ -245,7 +247,7 @@ MY_OBJECT.key = "otherValue";</code>
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>while Statement</header>
         <div class="section-container">
           <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
@@ -272,7 +274,7 @@ while (n < 3) {
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Function Declarations</header>
         <div class="section-container">
           <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
@@ -291,7 +293,7 @@ while (n < 3) {
         </div>
       </section>
 
-      <section>
+      <section class="main-section">
         <header>Reference</header>
         <div class="section-container">
           <ul>
@@ -301,7 +303,7 @@ while (n < 3) {
       </section>
 
     </div>
-  </div>
+  </main>
 
   <!-- Navbar Toggle-->
   <script type="text/javascript" src="navbarToggle.js"></script>
