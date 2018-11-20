@@ -80,8 +80,16 @@ html, body {
   padding-left: 20px;
 }
 
-pre {
-  background-color: white;
+code{
+    display:block;
+    text-align: left;
+    white-space: pre;
+    line-height: 2;
+    background-color:#f7f7f7;
+    padding: 15px;
+    margin: 15px;
+    color: #f73859;
+    border-radius:5px;
 }
 
 
@@ -115,8 +123,6 @@ pre {
   }
 
   .main-doc {
-    height: 100%;
-    overflow: scroll;
     margin-left: 300px; /* Width of left-side-nav */
   }
 
