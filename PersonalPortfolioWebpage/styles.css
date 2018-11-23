@@ -12,100 +12,84 @@ body, html {
 body {
   background-color: rgb(34, 34, 37);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(50, 50, 50);
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(34, 34, 37);
+}
+
+.navbar-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 1em;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .banner {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 0;
-  height: 0;
-  padding-top: 66%;
-  position: relative;
-  overflow: hidden;
-}
-
-.banner::before {
-  background: linear-gradient(rgba(0, 0, 0, 0.6),
-  rgba(0, 0, 0, 0.6)),
-  url("images/banner-image.jpg");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-
-  content: '';
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  will-change: transform;
-  z-index: -1;
+  background-color: rgb(34, 34, 37);
+  height: 100vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .banner-container {
   text-align: center;
   color: white;
-  padding-bottom: 70%;
-  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
 }
 
-.contact-links {
-  padding-top: 10px;
-}
-
-.contact-links a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 20px 10px 20px;
-  border: 2px solid white;
-  margin: 0 5px 0 5px;
-}
-
-.contact-links a:hover {
-  background-color: white;
-  color: black;
-}
-
-.intro {
+.about {
   background-color: rgb(237, 238, 239);
   padding: 10% 5% 10% 5%;
 }
 
-.intro-container {
+.section-container {
   text-align: center;
   width: 100%;
   margin: 0 auto;
 }
 
+#projects {
+  min-height: 100vh;
+  background-color: white;
+  padding: 20px;
+}
+
 @media only screen and (min-width: 1024px) {
 
-  .banner {
-    position: relative;
-    overflow: hidden;
-    min-height: 100%;
-    padding-top: 0;
+  .navbar-container {
+    justify-content: flex-end;
+    max-width: 1200px;
   }
 
-  .banner::before {
-    background-position: center;
-    background-size: cover;
-    height: 100%;
+  .nav-link {
+    margin-right: 40px;
+    flex-grow: initial;
+    text-align: right;
   }
 
   .banner-container {
     font-size: 2em;
-    padding-bottom: 5%;
   }
 
-  .intro {
+  .about {
     padding: 50px 25px 50px 25px;
   }
 
-  .intro-container {
+  .section-container {
     max-width: 1100px;
   }
 
