@@ -63,10 +63,57 @@ body {
 }
 
 #projects {
-  min-height: 100vh;
   background-color: white;
-  padding: 20px;
+  padding: 20px 0 20px 0;
 }
+
+.ios-project {
+  background-color: white;
+}
+
+.ios-project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ios-project h3 {
+  margin-top: 40px;
+}
+
+.ios-project p {
+  padding: 0px 20px 0px 20px;
+}
+
+.web-projects {
+  background-color: rgb(237, 238, 239);
+  margin-top: 40px;
+  padding: 40px 20px 40px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-item {
+
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-test {
+  height: 250px;
+  background: url("images/web-temp-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -90,7 +137,7 @@ body {
   }
 
   .section-container {
-    max-width: 1100px;
+    max-width: 1000px;
   }
 
 }
