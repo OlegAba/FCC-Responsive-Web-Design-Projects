@@ -52,7 +52,6 @@ body {
   text-align: center;
 }
 
-/* TODO: Change highlight to gray out all other elements */
 .nav-link:hover,
 .profile-link:hover {
   color: grey;
