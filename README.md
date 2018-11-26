@@ -1,9 +1,9 @@
 # FreeCodeCamp Responsive Web Design Project
 <p align="center">
-  <img width="50%" height="50%" src="https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png">
+  <img width="100%" height="100%" src="https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png">
 </p>
 <ol>
-  <li>Build a Tribute Page - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/TributePage/" target="_blank">Live Link</a></li>
+  <li>Build a Tribute Page - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/TributePage/">Live Link</a></li>
     <ul>
       <li>User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.</li>
       <li>User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").</li>
@@ -15,7 +15,7 @@
       <li>User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.</li>
       <li>User Story #9: The img element should be centered within its parent element.</li>
     </ul>
-  <li>Build a Survey Form</li>
+  <li>Build a Survey Form - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/SurveyForm/">Live Link</a></li>
     <ul>
       <li>User Story #1: I can see a title with id="title" in H1 sized text.</li>
       <li>User Story #2: I can see a short explanation with id="description" in P sized text.</li>
@@ -34,7 +34,7 @@
       <li>User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.</li>
       <li>User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.</li>
     </ul>
-  <li>Build a Product Landing Page</li>
+  <li>Build a Product Landing Page - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/ProjectLandingPage/">Live Link</a></li>
     <ul>
       <li>User Story #1: My product landing page should have a header element with a corresponding id="header".</li>
       <li>User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.</li>
@@ -52,7 +52,7 @@
       <li>User Story #14: My product landing page should have at least one media query.</li>
       <li>User Story #15: My product landing page should utilize CSS flexbox at least once.</li>    
     </ul>
-  <li>Build a Technical Documentation Page</li>
+  <li>Build a Technical Documentation Page - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/TechnicalDocumentationPage/">Live Link</a></li>
     <ul>
       <li>User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).</li>
       <li>User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.</li>
@@ -70,7 +70,7 @@
       <li>User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.</li>
       <li>User Story #15: My Technical Documentation page should use at least one media query.</li>
     </ul>
-  <li>Build a Personal Portfolio Webpage</li>
+  <li>Build a Personal Portfolio Webpage - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/PersonalPortfolioWebpage/">Live Link</a></li>
     <ul>
       <li>User Story #1: My portfolio should have a welcome section with an id of welcome-section.</li>
       <li>User Story #2: The welcome section should have an h1 element that contains text.</li>
