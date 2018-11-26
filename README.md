@@ -3,7 +3,7 @@
   <img width="50%" height="50%" src="https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png">
 </p>
 <ol>
-  <li>Build a Tribute Page - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/TributePage/" target="_blank"></a>Live Link</li>
+  <li>Build a Tribute Page - <a href="https://olegaba.github.io/FCCResponsiveWebDesignProjects/TributePage/" target="_blank">Live Link</a></li>
     <ul>
       <li>User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.</li>
       <li>User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").</li>
