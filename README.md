@@ -1,4 +1,5 @@
-# FreeCodeCamp Responsive Web Design Project ![FreeCodeCamp Responsive Web Design Certification](https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png)
+# FreeCodeCamp Responsive Web Design Project
+![FreeCodeCamp Responsive Web Design Certification](https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png){:height="50%" width="50%"}
 <ol>
   <li>Build a Tribute Page</li>
     <ul>
