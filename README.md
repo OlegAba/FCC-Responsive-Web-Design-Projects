@@ -1,5 +1,5 @@
 # FreeCodeCamp Responsive Web Design Project
-![FreeCodeCamp Responsive Web Design Certification](https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png){:height="50%" width="50%"}
+<img src="https://raw.githubusercontent.com/OlegAba/FCCResponsiveWebDesignProjects/master/FCCResponsiveWebDesignCert.png" width="50%" height="50%" margin="0 auto">
 <ol>
   <li>Build a Tribute Page</li>
     <ul>
