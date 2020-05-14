@@ -34,7 +34,7 @@
       <li>User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.</li>
       <li>User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.</li>
     </ul>
-  <li>Build a Product Landing Page - <a href="https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/ProjectLandingPage/">Live Link</a></li>
+  <li>Build a Product Landing Page - <a href="https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/ProductLandingPage/">Live Link</a></li>
     <ul>
       <li>User Story #1: My product landing page should have a header element with a corresponding id="header".</li>
       <li>User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.</li>
